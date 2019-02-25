@@ -24,7 +24,7 @@ body {
 	flex-wrap: wrap;
 }
 
-.screen {
+#screen {
 	height: 75px;
 	background: black;
 	width: 300px;
