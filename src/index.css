@@ -1,14 +1,89 @@
-body {
-  margin: 0;
-  padding: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
-    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+* {
+	margin: 0;
+	padding: 0;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
-    monospace;
+html, body {
+	height: 100%;
+}
+
+body {
+	background: black;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 1.2em;
+}
+
+.container {
+	height: 500px;
+	width: 300px;
+	background: rgb(0, 255, 0);
+	padding: 25px;
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.screen {
+	height: 75px;
+	background: black;
+	width: 300px;
+	padding: 20px;
+	text-align: center;
+	border: none;
+	box-sizing: border-box;
+	font-size: 1.2em;
+	color: rgb(0, 255, 0);
+}
+
+.left-inputs {
+	margin-top: 25px;
+	height: 400px;
+	width: 225px;
+	background: black;
+}
+
+.right-inputs {
+	margin-top: 25px;
+	height: 400px;
+	width: 75px;
+	background: black;
+}
+
+.left-row {
+	height: 100px;
+	display: flex;
+}
+.left-row:not(:first-child) {
+	border-top: 1px solid rgb(0, 255, 0);
+}
+
+.right-row {
+	height: 80px;
+	display: flex;
+}
+
+.right-row:not(:first-child) {
+	border-top: 1px solid rgb(0, 255, 0);
+}
+.button {
+	width: 75px;
+	color: rgb(0, 255, 0);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	cursor: pointer;
+}
+
+.button:hover {
+	color: black;
+	background: rgb(0, 255, 0);
+}
+
+.button:not(:first-child) {
+	border-left: 1px solid rgb(0, 255, 0);;
+}
+
+.right {
+	border-left: 1px solid rgb(0, 255, 0);
 }
